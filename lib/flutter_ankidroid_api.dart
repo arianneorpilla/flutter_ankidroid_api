@@ -2,6 +2,8 @@ library flutter_ankidroid_api;
 
 import 'package:flutter/services.dart';
 
+export 'flutter_ankidroid_api.dart';
+
 Future<void> requestPermissions() async {
   const platform = const MethodChannel('com.lrorpilla.api/ankidroid');
   await platform.invokeMethod('requestPermissions');
